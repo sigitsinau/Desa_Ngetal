@@ -1,8 +1,10 @@
+ol.proj.proj4.register(proj4);
+//ol.proj.get("EPSG:23836").setExtent([115354.511838, 605342.411549, 115765.753104, 605585.782021]);
 var wms_layers = [];
 
 var format_NGETAL_YURIDIS_0 = new ol.format.GeoJSON();
 var features_NGETAL_YURIDIS_0 = format_NGETAL_YURIDIS_0.readFeatures(json_NGETAL_YURIDIS_0, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:23836'});
 var jsonSource_NGETAL_YURIDIS_0 = new ol.source.Vector({
     attributions: ' ',
 });
